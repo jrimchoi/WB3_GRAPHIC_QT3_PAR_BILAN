@@ -1,0 +1,22 @@
+{
+    "name": "@widget-lab/prettier-config-widgetlab",
+    "version": "1.0.2",
+    "description": "This package aims to provide a common Prettier configuration for nodejs & widget projects",
+    "files": [
+        ".prettierrc.js"
+    ],
+    "main": ".prettierrc.js",
+    "scripts": {
+        "preversion": "git-branch-is master",
+        "postversion": "git push && git push --tags",
+        "pack": "rm -rf dist && mkdir dist && cd dist && npm pack .."
+    },
+    "author": "widget-lab",
+    "license": "",
+    "devDependencies": {
+        "git-branch-is": "^4.0.0"
+    },
+    "dependencies": {
+        "prettier": "^2.3.0"
+    }
+}

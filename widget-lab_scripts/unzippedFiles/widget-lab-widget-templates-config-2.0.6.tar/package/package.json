@@ -1,0 +1,29 @@
+{
+    "name": "@widget-lab/widget-templates-config",
+    "version": "2.0.6",
+    "description": "Configuration template for Widget Lab widgets",
+    "scripts": {
+        "preversion": "git-branch-is master",
+        "postversion": "git push && git push --tags",
+        "lint": "eslint *.js",
+        "lintFix": "eslint *.js --fix",
+        "pack": "rm -rf dist && mkdir dist && cd dist && npm pack .."
+    },
+    "files": [
+        "widget-config-template.js",
+        "bin"
+    ],
+    "bin": "./bin/copy-template.js",
+    "author": "widget-lab",
+    "license": "Unlicensed",
+    "main": "widget-config.js",
+    "eslintConfig": {
+        "extends": "@widget-lab/eslint-config-widgetlab/nodejs"
+    },
+    "prettier": "@widget-lab/prettier-config-widgetlab",
+    "devDependencies": {
+        "@widget-lab/eslint-config-widgetlab": "https://btcc.3ds.com/widget-lab/npm/widget-lab-eslint-config-widgetlab-1.4.5.tgz",
+        "@widget-lab/prettier-config-widgetlab": "https://btcc.3ds.com/widget-lab/npm/widget-lab-prettier-config-widgetlab-1.0.1.tgz",
+        "git-branch-is": "^4.0.0"
+    }
+}

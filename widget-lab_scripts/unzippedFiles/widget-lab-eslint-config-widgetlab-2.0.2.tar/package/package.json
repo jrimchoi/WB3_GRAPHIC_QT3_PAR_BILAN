@@ -1,0 +1,32 @@
+{
+    "name": "@widget-lab/eslint-config-widgetlab",
+    "version": "2.0.2",
+    "description": "",
+    "files": [
+        "*.js"
+    ],
+    "main": "index.js",
+    "scripts": {
+        "preversion": "git-branch-is master",
+        "postversion": "git push && git push --tags",
+        "lint": "eslint *.js",
+        "lintFix": "eslint *.js --fix",
+        "pack": "rm -rf dist && mkdir dist && cd dist && npm pack .."
+    },
+    "author": "widget-lab",
+    "license": "",
+    "eslintConfig": {
+        "extends": "./nodejs"
+    },
+    "prettier": "@widget-lab/prettier-config-widgetlab",
+    "dependencies": {
+        "eslint": "8.13.0",
+        "eslint-config-prettier": "8.5.0",
+        "eslint-plugin-json": "3.1.0",
+        "eslint-plugin-vue": "8.7.1",
+        "git-branch-is": "^4.0.0"
+    },
+    "devDependencies": {
+        "@widget-lab/prettier-config-widgetlab": "https://btcc.3ds.com/widget-lab/npm/widget-lab-prettier-config-widgetlab-1.0.2.tgz"
+    }
+}

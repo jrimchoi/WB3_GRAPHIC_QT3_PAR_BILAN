@@ -1,0 +1,22 @@
+{
+    "name": "@widget-lab/browserslist-config-widgetlab",
+    "version": "0.2.1",
+    "description": "This package aims to provide a common Browserslist configuration for widget projects",
+    "files": [
+        "index.js"
+    ],
+    "main": "index.js",
+    "author": "widget-lab",
+    "license": "",
+    "prettier": "@widget-lab/prettier-config-widgetlab",
+    "scripts": {
+        "preversion": "git-branch-is master",
+        "postversion": "git push && git push --tags",
+        "pack": "rm -rf dist && mkdir dist && cd dist && npm pack .."
+    },
+    "devDependencies": {
+        "@widget-lab/prettier-config-widgetlab": "https://btcc.3ds.com/widget-lab/npm/widget-lab-prettier-config-widgetlab-1.0.1.tgz",
+        "browserslist": "^4.16.4",
+        "git-branch-is": "^4.0.0"
+    }
+}

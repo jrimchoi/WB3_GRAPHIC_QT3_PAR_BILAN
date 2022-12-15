@@ -1,0 +1,50 @@
+.uwa-framed {
+    overflow: hidden;
+}
+
+h1 {
+    color: red;
+    font-size: 30px;
+    line-height: 36px;
+}
+.v-navigation-drawer__content{
+    background-color: rgb(0, 145, 100);
+}
+.v-list-item__title{
+    color: #B2DFDB;
+}
+
+.split {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    overflow: hidden;
+}
+
+.left {
+    background-color: teal;
+    /*overflow-y: scroll; /* it works! */
+}
+
+.right {
+    padding-left: 56px;
+    flex: 1;
+    overflow-y: auto;
+    /* it works! */
+}
+
+.left-item {
+    border-radius: 5px;
+    margin: 15px;
+}
+
+.right-item {
+    border-radius: 5px;
+    margin: 15px;
+    min-height: 300px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
